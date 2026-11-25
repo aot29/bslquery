@@ -35,3 +35,19 @@ jupyter lab
 Open the `examples/00_Setup_DB_Connection` notebook and follow the instructions in the notebook to finish the setup.
 
 See the notebooks in the `examples` directory for more examples.
+
+
+## Generating the API documentation
+The classes in `src/bslquery` are documented with [pdoc](https://pdoc.dev), which reads the docstrings automatically.
+
+```
+conda activate biosoundslab
+pip install -e ".[dev]"
+# static HTML into docs/
+pdoc bslquery -o docs
+# or serve locally at http://localhost:8080
+pdoc -p 8080 bslquery
+```
+
+Open `docs/index.html` in a browser to browse the generated docs.
+

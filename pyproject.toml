@@ -23,6 +23,7 @@ dev = [
     "pytest-cov",
     "ruff",
     "mypy",
+    "pdoc>=15",
 ]
 notebooks = [
     "jupyter",
